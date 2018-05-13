@@ -1,0 +1,81 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+
+    <ion-item>
+        <ion-label floating >PHI Registration Number</ion-label>
+        <ion-input type="text" [(ngModel)]="signupData.phiID"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Working District</ion-label>
+      <ion-select interface="action-sheet" [(ngModel)]="toppings" multiple="true">
+        <ion-option>Ampara</ion-option>
+        <ion-option>Anuradhapura</ion-option>
+        <ion-option>Badulla</ion-option>
+        <ion-option>Batticaloa</ion-option>
+        <ion-option>Colombo</ion-option>
+        <ion-option>Galle</ion-option>
+        <ion-option>Gampaha</ion-option>
+        <ion-option>Hambantota</ion-option>
+        <ion-option>Jaffna</ion-option>
+        <ion-option>Kalutara</ion-option>
+        <ion-option>Kandy</ion-option>
+        <ion-option>Kegalle</ion-option>
+        <ion-option>Kilinochchi</ion-option>
+        <ion-option>Kurunegala</ion-option>
+        <ion-option>Mannar</ion-option>
+        <ion-option>Matale</ion-option>
+        <ion-option>Matara</ion-option>
+        <ion-option>Moneragala</ion-option>
+        <ion-option>Mullaitivu</ion-option>
+        <ion-option>Nuwara Eliya</ion-option>
+        <ion-option>Polonnaruwa</ion-option>
+        <ion-option>Puttalam</ion-option>
+        <ion-option>Ratnapura</ion-option>
+        <ion-option>Trincomalee</ion-option>
+        <ion-option>Vavuniya</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+<ion-item>
+  <ion-label floating >Working Area 01</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.lname"></ion-input>
+</ion-item>
+
+
+<ion-item>
+  <ion-label floating >Working Area 02</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.nic"></ion-input>
+</ion-item>
+
+
+<ion-item>
+  <ion-label floating >Working Area 03</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.nic"></ion-input>
+</ion-item>
+
+
+<ion-item>
+  <ion-label floating >Working Area Others</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.nic"></ion-input>
+</ion-item>
+
+  <button class="signup" full ion-button (click)="signup()" [disabled]="!signupData.fname || !signupData.lname ||!signupData.phiID || !signupData.nic || !signupData.date" >SAVE</button>
+
+
+</ion-content>

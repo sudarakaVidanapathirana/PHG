@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Public Health Guide </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg-image" >
+  <h2>Home</h2>
+
+  <div class="headerBanner">
+    <ion-slides class="home-slide" autoplay="3000" loop>
+      <ion-slide>
+        <img src="../../assets/0001.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/0002.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/0003.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/0004.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/0005.jpg">
+      </ion-slide>
+   </ion-slides>
+
+   <ion-slides class="home-slide" autoplay="3000" loop>
+    
+  <ion-slide>
+   <ion-item class="ps">
+      <ion-avatar item-start>
+        <img src="../../assets/healthcare-icon.png">
+      </ion-avatar>
+      <h2>Public Health Inspectors</h2>
+      <p class="pa">Since 1913-2018</p>
+    </ion-item>
+  </ion-slide>
+
+  <ion-slide>
+      <ion-item class="ps1">
+         <ion-avatar item-start>
+           <img src="../../assets/010.jpg">
+         </ion-avatar>
+         <h2>Food Safety Raids</h2>
+         <p class="pa">Ensuring food safety since 1913-2018 </p>
+       </ion-item>
+     </ion-slide>
+
+     <ion-slide>
+        <ion-item class="ps2">
+           <ion-avatar item-start>
+             <img src="../../assets/0007.jpg">
+           </ion-avatar>
+           <h2>Environment Saftey</h2>
+           <p class="pa">For a Better Environment in Sri Lanka</p>
+         </ion-item>
+       </ion-slide>   
+  
+       <ion-slide>
+          <ion-item class="ps3">
+             <ion-avatar item-start>
+               <img src="../../assets/public-health_0.png">
+             </ion-avatar>
+             <h2>Family Saftey</h2>
+             <p class="pa">Protect Our Families and Build Nation</p>
+           </ion-item>
+         </ion-slide>
+  
+         <ion-slide>
+            <ion-item class="ps4">
+               <ion-avatar item-start>
+                 <img src="../../assets/0008.jpg">
+               </ion-avatar>
+               <h2>School Health </h2>
+               <p class="pa">A Healthfull Child Generation</p>
+             </ion-item>
+           </ion-slide>
+
+  </ion-slides>
+   </div> 
+
+<div class="card-background-page">
+<ion-card (click)="openItem()">
+    <img src="../../assets/012.jpg"/>
+    <!-- <div class="card-title">School Health</div> -->
+    <div class="card-subtitle">Quater School Health Program Reports</div>
+  </ion-card>
+
+  <ion-card (click)="FH()">
+    <img src="../../assets/0009.jpg"/>
+    <!-- <div class="card-title">Family Health</div> -->
+    <div class="card-subtitle">Monthly Family Health Scedules</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="../../assets/0005.jpg"/>
+      <!-- <div class="card-title">Environment Health</div> -->
+      <div class="card-subtitle">Monthly Sampling and Reports</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="../../assets/011.jpg"/>
+      <!-- <div class="card-title">Epidemiology</div> -->
+      <div class="card-subtitle">Annual Disease Reorts</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/0003.jpg"/>
+    <!-- <div class="card-title">Food and Safety Hygine</div> -->
+    <div class="card-subtitle">Annual H-800 Reports</div>
+  </ion-card> 
+</div>
+ 
+
+
+
+
+</ion-content>

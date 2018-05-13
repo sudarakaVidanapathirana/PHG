@@ -1,0 +1,106 @@
+<!--
+  Generated template for the SchoolStdPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Student Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding CLASS="bg-image">
+
+    <form [formGroup]="schoolOrderForm" (ngSubmit)="Submits()">
+
+      <ion-card>
+   
+  <ion-item>
+    <ion-label floating>Student name</ion-label>
+    <ion-input type="text"  [(ngModel)]="stName"  formControlName="elements" ></ion-input>
+  </ion-item>
+
+    <ion-item>
+        <ion-label floating>Student Birth Date </ion-label>  
+       <ion-datetime displayFormat = "DD/MM/YYYY"  [(ngModel)]="date"  formControlName="elements" ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Student Height (cm)</ion-label>
+        <ion-input type="text"  [(ngModel)]="stHeight"  formControlName="elements" ></ion-input>
+      </ion-item>
+    
+    <ion-item>
+          <ion-label floating>Student Weight (kg)</ion-label>
+          <ion-input type="text"  [(ngModel)]="stweight"  formControlName="elements" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>School</ion-label>
+            <ion-input type="text"  [(ngModel)]="stSchool"  formControlName="elements" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+
+          </ion-item>
+      
+        </ion-card> 
+
+
+            <ion-item>
+                  <ion-label>School Grades</ion-label>
+                </ion-item>
+                
+                  <ion-list radio-group  [(ngModel)]="grades"  formControlName="elements" >
+                  <ion-item>
+                    <ion-label>Grade One</ion-label>
+                    <ion-radio value="one"unchecked></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Grade Four</ion-label>
+                    <ion-radio value="four"unchecked></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Grade Seven</ion-label>
+                    <ion-radio value="seven"unchecked></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Grade Ten</ion-label>
+                    <ion-radio value="ten" unchecked></ion-radio>
+                  </ion-item>
+                </ion-list>
+           
+        
+
+        <ion-item>
+              <ion-label>Finaly Checked Grade</ion-label>
+            </ion-item>
+            
+              <ion-list radio-group  [(ngModel)]="final_grades" formControlName="elements" >
+              <ion-item>
+                <ion-label>Grade One</ion-label>
+                <ion-radio value="one"unchecked></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grade Four</ion-label>
+                <ion-radio value="four"unchecked></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grade Seven</ion-label>
+                <ion-radio value="seven"unchecked></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grade Ten</ion-label>
+                <ion-radio value="ten" unchecked></ion-radio>
+              </ion-item>
+            </ion-list>      
+
+            <button type="submit" color="buttons" class="my-button" ion-button full (click)="save(stName,date,stHeight,stweight,stSchool,grades,final_grades)">SAVE</button>
+
+</form>
+
+</ion-content>

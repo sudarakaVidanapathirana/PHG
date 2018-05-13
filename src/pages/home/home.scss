@@ -1,0 +1,79 @@
+page-home {
+    .bg-image{
+        background-image: url('../assets/pub.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:contain; 
+    }
+    
+    .ps{
+      background:linear-gradient(to right,rgba(148, 165, 0, 0.809) 0%, rgb(174, 174, 174) 100%) ;
+      
+    }
+
+    .ps1{
+      background:linear-gradient(to right,rgba(1, 140, 150, 0.912) 0%, rgb(174, 174, 174) 100%) ;
+      
+    }
+
+    .ps2{
+      background:linear-gradient(to right,rgba(244, 187, 1, 0.885) 0%, rgb(174, 174, 174) 100%) ;
+      
+    }
+
+    .ps3{
+      background:linear-gradient(to right,rgba(1, 196, 17, 0.898) 0%, rgb(174, 174, 174) 100%) ;
+      
+    }
+
+    .ps4{
+      background:linear-gradient(to right,rgba(235, 21, 49, 0.857) 0%, rgb(174, 174, 174) 100%) ;
+      
+    }    
+
+    .pa{
+
+      color: black;
+    }
+
+    
+    
+    
+    .card-background-page {
+    
+        ion-card {
+          top:50px;
+          position: relative;
+          text-align: center;
+          box-shadow: 10px;
+          border-radius: 2px;
+          
+        }
+      
+        // .card-title {
+        //   position: absolute;
+        //   top: 76%;
+        //   font-size: 1.3em;
+        //   width: 100%;
+        //   font-weight: bold;
+        //   color: #fff;
+        //   background: linear-gradient(to left, rgb(67, 155, 213) 0%, rgb(11, 63, 91) 100%) ;
+        // }
+      
+        .card-subtitle {
+          font-size: 1.3em;
+          position: absolute;
+          top: 86%;
+          width: 100%;
+          color: #fff;
+          background:linear-gradient(to right,rgb(11, 63, 91) 0%, rgb(67, 155, 213) 100%) ;
+        }
+     
+    
+       
+     
+      }
+
+    
+
+}

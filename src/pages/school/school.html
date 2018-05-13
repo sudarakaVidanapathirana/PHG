@@ -1,0 +1,78 @@
+<!--
+  Generated template for the SchoolPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Schools</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+
+    <form [formGroup]="orderForm" (ngSubmit)="submit()">
+  
+<ion-card>
+
+    <ion-item>
+        <ion-label floating>School name</ion-label>
+        <ion-input type="text"  [(ngModel)]="schoolName" formControlName="itemname"></ion-input>
+      </ion-item>
+
+      <div class="divide"></div> 
+      
+      <ion-item>
+        <ion-label floating>School Area</ion-label>
+        <ion-input type="text"  [(ngModel)]="schoolArea" formControlName="itemname"></ion-input>
+      </ion-item>
+
+      <div class="divide"></div> 
+
+      <ion-item>
+        <ion-label floating>Last Visited Date</ion-label>  
+       <ion-datetime displayFormat = "DD/MM/YYYY"  [(ngModel)]="date" formControlName="itemname"></ion-datetime>
+    </ion-item>
+     
+     <div class="divide"></div>
+
+      <ion-item>
+        <ion-label>School Students</ion-label>
+      </ion-item> 
+      
+        <ion-list radio-group [(ngModel)]="grades" formControlName="itemname">
+        <ion-item>
+          <ion-label>Less than 200 Student</ion-label>
+          <ion-radio value="less_200" unchecked></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Grater than 200 student</ion-label>
+          <ion-radio value="Grate_200" unchecked></ion-radio>
+        </ion-item>
+      </ion-list>
+
+        <div class="divide"></div>  
+
+      <ion-item>
+          <ion-label>Checked Grades</ion-label>
+        <ion-select interface="action-sheet" [(ngModel)]="toppings" multiple="true" formControlName="itemname">
+          <ion-option>One</ion-option>
+          <ion-option>Four</ion-option>
+          <ion-option>Seven</ion-option>
+          <ion-option>Ten</ion-option>
+          <ion-option>No</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <div class="divide"></div>
+
+    </ion-card>
+
+       <button  type="submit" color="buttons" class="my-button"  ion-button full (click)="save(schoolName,schoolArea,date,grades,toppings)">SAVE</button>
+
+      </form>
+</ion-content>
